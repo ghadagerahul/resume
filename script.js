@@ -1,2 +1,2 @@
-const themeToggle=document.getElementById('themeToggle');themeToggle.addEventListener('click',()=>{document.body.classList.toggle('light-mode');const isLight=document.body.classList.contains('light-mode');localStorage.setItem('resume-light-mode',isLight?'1':'0');themeToggle.textContent=isLight?'☀️':'🌙'});
-if(localStorage.getItem('resume-light-mode')==='1'){document.body.classList.add('light-mode');themeToggle.textContent='☀️';}
+const themeToggle = document.getElementById('themeToggle'); themeToggle.addEventListener('click', () => { document.body.classList.toggle('light-mode'); const isLight = document.body.classList.contains('light-mode'); localStorage.setItem('resume-light-mode', isLight ? '1' : '0'); themeToggle.textContent = isLight ? '☀️' : '🌙' });
+if (localStorage.getItem('resume-light-mode') === '1') { document.body.classList.add('light-mode'); themeToggle.textContent = '☀️'; }
